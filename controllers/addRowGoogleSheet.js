@@ -148,7 +148,7 @@ const addRowGoogleSheet = async (req, res) => {
         email,
         city,
         anon,
-        amount,
+        amount: Number(amount.replace(/[,a-z]/gi, "")),
         updateMethod,
         note,
         nickname,
